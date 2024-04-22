@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Staatliches&family=Play:wght@400;700&display=swap');
+
+/* Styling for addpost , login , contact forms */
+
+:root {
+    --primary-color: #00aa69;
+    --primary-color-dark: #006b1b;
+    --secondary-color: #E1C16E;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --extra-light: #faf5ff;
+    --max-width: 1200px;
+  }
+
+  
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+input.missing, textarea.missing {
+    border: 4px solid red !important;
+}
+
+.contact-form-container {
+    background-color: #f9f9f9; 
+    box-shadow: 0 0.125em 0.625em rgba(0,0,0,0.1);
+    padding: 2.5em;
+    border-radius: 0.5em;
+    width: 90%;
+    max-width: 37.5em; 
+    margin: 3% auto; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 0.9375em;
+    margin: 0.625em 0;
+    border: 0.0625em solid #ccc;
+    border-radius: 0.25em;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #4CAF50; 
+    outline: none;
+}
+
+label {
+    margin-top: 1.25em;
+    margin-bottom: 0.3125em;
+    font-size: 1em; 
+    color: #333;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625em;
+    justify-content: space-between;
+    margin-top: 1.25em;
+}
+
+button {
+    cursor: pointer;
+    padding: 0.625em 0.9375em;
+    border: none;
+    border-radius: 0.25em;
+    font-size: 1em; 
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50; 
+    color: white;
+}
+
+button[type="button"] {
+    background-color: #f44336; 
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.footer {
+    background-color: #fff;
+    color: #ffffff;
+    padding: 2rem 0;
+  }
+  
+  .footer__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 1rem;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+  }
+  
+  .footer__content {
+    margin-bottom: 1rem;
+  }
+  
+  .footer__link {
+    color: #000;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s;
+  }
+  
+  .footer__link:hover {
+    color: #bbbbbb; 
+  }
+  
+  .footer__copyright {
+    font-size: 0.875rem;
+  }
+
+
+/* Assessment Criteria 12 Make the website responsive using media queries */
+@media (max-width: 768px) {
+    .contact-form-container {
+        padding: 1.25em;
+        margin: 1.25em auto; 
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    label,
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    button {
+        font-size: 0.875em; 
+    }
+
+
+}

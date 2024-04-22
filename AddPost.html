@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <title>Add Blog Post</title>
+    <link rel="stylesheet" href="css/reset.css"> 
+    <link rel="stylesheet" href="css/style2.css"> 
+    <link rel="icon" type="image/x-icon" href="img/Image3.png">
+</head>
+<body>
+    <div class="contact-form-container">
+      <form id="contact-form" action="Addpost.php" method="post">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title">
+    
+        <label for="message">Post Content:</label>
+        <textarea id="message" name="post_content" rows="10" maxlength="6000" placeholder="Your Blog content here."></textarea>
+    
+        <div class="buttons">
+            <button type="submit">Send</button>
+            <button type="button" id="previewButton">Preview</button>
+            <button type="button" id="clearButton">Clear Form</button>
+        </div>
+    </form>
+    </div>
+ 
+    <script src="script.js"></script>
+
+<footer class="footer">
+    <div class="footer__container">
+      <div class="footer__content">
+        <a href="Homepage.html" class="footer__link">Homepage</a>
+        <a href="viewBlog.php" class="footer__link">Blog</a>
+      </div>
+      <p class="footer__copyright">&copy; 2024 Maks. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
