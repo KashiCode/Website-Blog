@@ -1,4 +1,4 @@
-### Portfolio website with backend blog, created using JavaScript, HTML, PHP, and CSS.
+### Portfolio website with backend blog, created using JavaScript, HTML, PHP, SQL and CSS.
 
 ![image](https://github.com/user-attachments/assets/1967ed10-ea03-428a-8f97-1c301ead3e48)
 
